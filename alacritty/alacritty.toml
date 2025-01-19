@@ -1,12 +1,14 @@
-import = [
-    "~/.config/alacritty/catppuccin-mocha.toml"
-]
 [font]
-size = 16.0
+size = 14.0
 
 [font.normal]
-family = "Iosevka Nerd Font Mono"
+family = "IosevkaTermSlab Nerd Font Mono"
 
 [cursor]
 style = { shape = "Underline", blinking = "On" }
+
+[general]
+import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
 
