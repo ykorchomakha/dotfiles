@@ -1,0 +1,58 @@
+*.font: xft:IosevkaTermSlab Nerd Font Mono:style=Regular:size=14
+*.boldFont: xft:IosevkaTermSlab Nerd Font Mono:style=Bold:size=14
+*.italicFont: xft:IosevkaTermSlab Nerd Font Mono:style=Italic:size=14
+*.boldItalicFont: xft:IosevkaTermSlab Nerd Font Mono:style=Bold Italic:size=14
+
+! Foreground, background, and cursor
+URxvt.foreground: #ebdbb2
+URxvt.background: #282828
+URxvt.cursorColor: #ebdbb2 
+
+! Black
+URxvt.color0: #282828
+URxvt.color8: #928374
+
+! Red
+URxvt.color1: #cc241d
+URxvt.color9: #fb4934
+
+! Green
+URxvt.color2: #98971a
+URxvt.color10: #b8bb26
+
+! Yellow
+URxvt.color3: #d79921
+URxvt.color11: #fabd2f
+
+! Blue
+URxvt.color4: #458588
+URxvt.color12: #83a598
+
+! Magenta
+URxvt.color5: #b16286
+URxvt.color13: #d3869b
+
+! Cyan
+URxvt.color6: #689d6a
+URxvt.color14: #8ec07c
+
+! White
+URxvt.color7: #a89984
+URxvt.color15: #ebdbb2
+
+! Scrollbar
+URxvt.scrollBar: false
+
+! Cursor style
+URxvt.cursorUnderline: true
+
+! Cursor blinking (requires external program like xset)
+URxvt.cursorBlink: true
+
+! Prompt placement workaround
+URxvt.geometry: 400x400
+
+! Set normal copy paste behaviour
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
