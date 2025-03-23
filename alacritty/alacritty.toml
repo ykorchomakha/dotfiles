@@ -9,6 +9,6 @@ style = { shape = "Underline", blinking = "On" }
 
 [general]
 import = [
-    "~/.config/alacritty/catppuccin-mocha.toml"
+    "~/.config/alacritty/themes/gruvbox_dark.toml"
 ]
 

@@ -1,7 +1,7 @@
-*.font: xft:IosevkaTermSlab Nerd Font Mono:style=Regular:size=14
-*.boldFont: xft:IosevkaTermSlab Nerd Font Mono:style=Bold:size=14
-*.italicFont: xft:IosevkaTermSlab Nerd Font Mono:style=Italic:size=14
-*.boldItalicFont: xft:IosevkaTermSlab Nerd Font Mono:style=Bold Italic:size=14
+URxvt.font: xft:IosevkaTermSlab Nerd Font Mono:style=Regular:size=14
+URxvt.boldFont: xft:IosevkaTermSlab Nerd Font Mono:style=Bold:size=14
+URxvt.italicFont: xft:IosevkaTermSlab Nerd Font Mono:style=Italic:size=14
+URxvt.boldItalicFont: xft:IosevkaTermSlab Nerd Font Mono:style=Bold Italic:size=14
 
 ! Foreground, background, and cursor
 URxvt.foreground: #ebdbb2
