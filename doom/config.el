@@ -101,39 +101,39 @@
       (tab-mark     ?\t    [?\u00BB ?\t] [?\\ ?\t])))
   (global-whitespace-mode +1))
 
-(use-package! corfu
-  :custom
-  (corfu-auto t)                     ; Show completion menu automatically
-  (corfu-auto-delay 0.2)            ; Delay before popup
-  (corfu-auto-prefix 1)             ; Start completing after 1 character
-  (corfu-quit-no-match 'separator)  ; Keep corfu open even if no match
-  (corfu-quit-at-boundary nil)
-  (corfu-on-exact-match nil)        ; Don't auto-commit on exact match
-  (corfu-cycle t)                   ; Optional: cycle through candidates
-  :bind
-  (:map corfu-map
-   ("RET" . corfu-insert)           ; RET confirms selection
-   ;; disable RET quitting the menu if nothing selected:
-   ("C-RET" . corfu-insert)
-   ("<return>" . corfu-insert)))
+;; (use-package! corfu
+;;   :custom
+;;   (corfu-auto t)                     ; Show completion menu automatically
+;;   (corfu-auto-delay 0.2)            ; Delay before popup
+;;   (corfu-auto-prefix 1)             ; Start completing after 1 character
+;;   (corfu-quit-no-match 'separator)  ; Keep corfu open even if no match
+;;   (corfu-quit-at-boundary nil)
+;;   (corfu-on-exact-match nil)        ; Don't auto-commit on exact match
+;;   (corfu-cycle t)                   ; Optional: cycle through candidates
+;;   :bind
+;;   (:map corfu-map
+;;    ("RET" . corfu-insert)           ; RET confirms selection
+;;    ;; disable RET quitting the menu if nothing selected:
+;;    ("C-RET" . corfu-insert)
+;;    ("<return>" . corfu-insert)))
 
-(after! corfu
-  (setq corfu-preselect 'first))
+;; (after! corfu
+;;   (setq corfu-preselect 'first))
 
-(defun my/corfu-setup-return ()
-  "Make RET confirm completion only when corfu is visible."
-  (define-key corfu-map (kbd "RET") #'corfu-insert)
-  (define-key corfu-map (kbd "<return>") #'corfu-insert))
+;; (defun my/corfu-setup-return ()
+;;   "Make RET confirm completion only when corfu is visible."
+;;   (define-key corfu-map (kbd "RET") #'corfu-insert)
+;;   (define-key corfu-map (kbd "<return>") #'corfu-insert))
 
-(add-hook 'corfu-mode-hook #'my/corfu-setup-return)
+;; (add-hook 'corfu-mode-hook #'my/corfu-setup-return)
 
-(defun my/corfu-insert-or-first ()
-  "Insert selected candidate, or first if none selected."
-  (interactive)
-  (if corfu--candidates
-      (corfu-insert (or corfu--selected (car corfu--candidates)))
-    (newline)))
+;; (defun my/corfu-insert-or-first ()
+;;   "Insert selected candidate, or first if none selected."
+;;   (interactive)
+;;   (if corfu--candidates
+;;       (corfu-insert (or corfu--selected (car corfu--candidates)))
+;;     (newline)))
 
-(with-eval-after-load 'corfu
-  (define-key corfu-map (kbd "RET") #'my/corfu-insert-or-first)
-  (define-key corfu-map (kbd "<return>") #'my/corfu-insert-or-first))
+;; (with-eval-after-load 'corfu
+;;   (define-key corfu-map (kbd "RET") #'my/corfu-insert-or-first)
+;;   (define-key corfu-map (kbd "<return>") #'my/corfu-insert-or-first))
