@@ -1,0 +1,15 @@
+source ~/.vimrc
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+" Keymap
+let mapleader = " "
+nmap <leader>pp :action ManageRecentProjects<CR>
