@@ -3,8 +3,13 @@
 mkdir -p .config
 
 function link() {
-	echo "Creating symlink $(pwd)/$1 -> $HOME/$1"
-	ln -s $(pwd)/$1 $HOME/$1
+    TARGET=$HOME/$1
+	echo "Creating symlink $(pwd)/$1 -> $TARGET"
+    if [ -f $TARGET ] || [ -d $TARGET ] || [ -L $TARGET ]; then
+        echo "Link $TARGET exists"
+    else
+        ln -s $(pwd)/$1 $TARGET
+    fi
 }
 
 link .ideavimrc
@@ -22,4 +27,6 @@ link .config/polybar
 link .config/rofi
 link .config/starship.toml
 link .config/sway
+link .config/wofi
+link .config/waybar
 
