@@ -1,7 +1,11 @@
 vim.cmd("source ~/.vimrc")
+
 vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 
--- vim.api.nvim_set_option("clipboard","unnamedplus")
+-- stop extending comments automatically
+vim.opt.formatoptions:remove("c")
+vim.opt.formatoptions:remove("r")
+vim.opt.formatoptions:remove("o")
 
 -- Set up an autocmd to trigger the highlighting after yanking
 vim.cmd([[
