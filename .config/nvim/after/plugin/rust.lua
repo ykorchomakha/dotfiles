@@ -1,7 +1,8 @@
 local bufnr = vim.api.nvim_get_current_buf()
+local keymap = require('conf.keymap')
 vim.keymap.set(
     "n",
-    "<leader>a",
+    keymap['rust_code_action'],
     function()
         vim.cmd.RustLsp('codeAction') -- supports rust-analyzer's grouping
         -- or vim.lsp.buf.codeAction() if you don't want grouping.
@@ -10,7 +11,7 @@ vim.keymap.set(
 )
 vim.keymap.set(
     "n",
-    "K", -- Override Neovim's built-in hover keymap with rustaceanvim's hover actions
+    keymap['rust_hover'], -- Override Neovim's built-in hover keymap with rustaceanvim's hover actions
     function()
         vim.cmd.RustLsp({ 'hover', 'actions' })
     end,

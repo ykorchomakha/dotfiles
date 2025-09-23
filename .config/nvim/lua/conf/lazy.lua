@@ -16,13 +16,6 @@ require('lazy').setup({
     { 'williamboman/mason-lspconfig.nvim' },
     {
         'neovim/nvim-lspconfig',
-        -- opts = {
-        --     setup = {
-        --         rust_analyzer = function()
-        --             return true
-        --         end,
-        --     },
-        -- },
     },
     {
         'nvim-telescope/telescope.nvim',
@@ -74,18 +67,6 @@ require('lazy').setup({
     { 'lewis6991/gitsigns.nvim' },
     { 'tpope/vim-commentary' },
 
-    {
-        "nvim-tree/nvim-tree.lua",
-        version = "*",
-        lazy = false,
-        dependencies = {
-            "nvim-tree/nvim-web-devicons",
-        },
-        config = function()
-            require("nvim-tree").setup {}
-        end,
-    },
-
     -- Debugger
     { 'mfussenegger/nvim-dap' },
     { 'nvim-neotest/nvim-nio' },
@@ -93,34 +74,14 @@ require('lazy').setup({
     { 'theHamsta/nvim-dap-virtual-text' },
     { 'nvim-telescope/telescope-dap.nvim' },
     { 'leoluz/nvim-dap-go' },
+    { 'tpope/vim-vinegar' },
 
-    -- lazygit
-    {
-        "kdheepak/lazygit.nvim",
-        cmd = {
-            "LazyGit",
-            "LazyGitConfig",
-            "LazyGitCurrentFile",
-            "LazyGitFilter",
-            "LazyGitFilterCurrentFile",
-        },
-        -- optional for floating window border decoration
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-        },
-        -- setting the keybinding for LazyGit with 'keys' is recommended in
-        -- order to load the plugin when the command is run for the first time
-        keys = {
-            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-        }
-    },
     -- status line
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
-    -- autosave
-    { 'pocco81/auto-save.nvim' },
+
     -- rust
     {
         'mrcjkb/rustaceanvim',
