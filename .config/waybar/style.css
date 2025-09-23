@@ -18,6 +18,7 @@ tooltip {
     border: 2px solid #766451;
 }
 
+#language,
 #clock,
 #tray,
 #cpu,
@@ -64,6 +65,7 @@ tooltip {
     color: #6c782e;
 }
 
+#language,
 #tray,
 #cpu,
 #memory,
