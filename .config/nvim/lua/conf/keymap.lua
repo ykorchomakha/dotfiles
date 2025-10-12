@@ -33,21 +33,21 @@ local keys = {
     ['harpoon_quick_menu'] = '<leader>hm',
 
     -- LSP
-    ['find_workspace_symbols'] = '<leader>ft',
-    ['find_references'] = '<leader>fr',
-    ['format_code'] = '<leader>ff',
-    ['code_action'] = '<leader>qf',
-    ['diagnostic_float'] = '<leader>d',
+    ['find_workspace_symbols'] = '<leader>cj',
+    ['find_references'] = 'gD',
+    ['format_code'] = '<leader>cf',
+    ['code_action'] = '<leader>ca',
+    ['diagnostic_float'] = '<leader>cd',
 
     -- debugger
     ['debug_toggle_ui'] = '<leader>du',
-    ['debug_toggle_breakpoint'] = '<leader>bp',
+    ['debug_toggle_breakpoint'] = '<leader>db',
     ['debug_continue'] = '<leader>dc',
     ['debug_step_into'] = '<leader>di',
     ['debug_step_over'] = '<leader>do',
 
     -- rust tools
-    ['rust_code_action'] = '<leader>a',
+    ['rust_code_action'] = '<leader>ca',
     ['rust_hover'] = 'K',
 
     -- misc
