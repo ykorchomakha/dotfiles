@@ -12,4 +12,22 @@ Plug 'tpope/vim-commentary'
 
 " Keymap
 let mapleader = " "
+" File
+nmap <leader>fr :action RecentFiles<CR>
+nmap <leader>fs :action SaveAll<CR>
+
+"Project
 nmap <leader>pp :action ManageRecentProjects<CR>
+nmap <leader>pc :action CompileDirty<CR>
+
+" Git
+nmap <leader>gp :action Vcs.UpdateProject<CR>
+nmap <leader>gP :action Vcs.Push<CR>
+nmap <leader>gb :action Git.Branches<CR>
+nmap <leader>gc :action CheckinProject<CR>
+nmap <leader>gg :action ActivateVersionControlToolWindow<CR>
+
+" Search
+nmap <leader>/ :action TextSearchAction<CR>
+nmap <leader>pf :action GotoFile<CR>
+nmap <leader>cj :action GotoClass<CR>

@@ -17,6 +17,7 @@
     ],
 
     "modules-right": [
+        "hyprland/language",
         "tray",
         "cpu_text",
         "cpu",
@@ -31,7 +32,11 @@
         "all-outputs": true,
         "tooltip": false
     },
-
+    "hyprland/language": {
+        "format": "{}",
+        "format-uk": "UA",
+        "format-en": "US",
+    },
     "tray": {
         "spacing": 10,
         "tooltip": false

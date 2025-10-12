@@ -1,0 +1,46 @@
+@define-color bg0_color #282828;
+@define-color bg1_color #3c3836;
+@define-color bg2_color #504945;
+@define-color bg3_color #665c54;
+@define-color bg4_color #7c6f64;
+@define-color bg0_h_color #1d2021;
+
+@define-color fg_color #ebdbb2;
+
+window {
+  margin: 2px;
+  background-color: @bg0_color;
+  border-radius: 10;
+  background-color: @bg0_color;
+}
+
+#input {
+  margin: 2px;
+  border: 2px solid @bg4_color;
+  border-radius: 5;
+  background-color: @bg0_color;
+}
+
+#inner-box {
+  margin: 2px;
+  background-color: @bg0_color;
+}
+
+#outer-box {
+  margin: 2px;
+  border: 2px solid @bg0_h_color;
+  border-radius: 10;
+  background-color: @bg0_color;
+}
+
+.entry image {
+  margin-right: 10px;
+}
+
+#scroll {
+  margin: 2px;
+}
+
+#text {
+  color: @fg_color;
+} 
