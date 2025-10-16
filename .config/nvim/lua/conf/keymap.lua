@@ -50,6 +50,9 @@ local keys = {
     ['rust_code_action'] = '<leader>ca',
     ['rust_hover'] = 'K',
 
+    -- tests
+    ['test_nearest'] = '<leader>tr',
+
     -- misc
     ['terminal'] = '<leader>ot',
 }

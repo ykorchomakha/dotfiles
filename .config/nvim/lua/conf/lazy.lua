@@ -49,6 +49,8 @@ require('lazy').setup({
             { 'hrsh7th/cmp-nvim-lsp' },
         }
     },
+    -- Java extras
+    { 'mfussenegger/nvim-jdtls' },
     -- Autocompletion
     {
         'hrsh7th/nvim-cmp',
@@ -75,6 +77,17 @@ require('lazy').setup({
     { 'nvim-telescope/telescope-dap.nvim' },
     { 'leoluz/nvim-dap-go' },
     { 'tpope/vim-vinegar' },
+
+    -- Tests
+    {
+        'nvim-neotest/neotest',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'nvim-treesitter/nvim-treesitter',
+            'antoinemadec/FixCursorHold.nvim',
+            'rcasia/neotest-java',
+        },
+    },
 
     -- status line
     {
