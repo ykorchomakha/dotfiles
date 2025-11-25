@@ -46,10 +46,6 @@ local keys = {
     ['debug_step_into'] = '<leader>di',
     ['debug_step_over'] = '<leader>do',
 
-    -- rust tools
-    ['rust_code_action'] = '<leader>ca',
-    ['rust_hover'] = 'K',
-
     -- tests
     ['test_nearest'] = '<leader>tr',
 

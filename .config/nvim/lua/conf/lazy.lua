@@ -94,11 +94,4 @@ require('lazy').setup({
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
-
-    -- rust
-    {
-        'mrcjkb/rustaceanvim',
-        version = '^6', -- Recommended
-        lazy = false,   -- This plugin is already lazy
-    },
 })
