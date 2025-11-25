@@ -67,5 +67,6 @@ vim.keymap.set('n', keys['vertical_split'], ':vsplit<CR><C-w>l')
 vim.keymap.set('n', keys['save_file'], ':w<CR>')
 
 vim.keymap.set('n', keys['terminal'], ':terminal<CR>')
+vim.keymap.set('n', keys['file_explorer'], ':Ex<CR>')
 
 return keys
