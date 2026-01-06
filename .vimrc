@@ -35,3 +35,7 @@ if !has('nvim')
     set undodir=$HOME/.vim/undodir
 endif
 
+
+" netrw
+set nocp                    " 'compatible' is not set
+filetype plugin on          " plugins are enabled
