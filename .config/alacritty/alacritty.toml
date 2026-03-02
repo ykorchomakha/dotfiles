@@ -1,8 +1,9 @@
 [font]
-size = 14.0
+size = 13.0
 
 [font.normal]
-family = "IosevkaTermSlab Nerd Font Mono"
+# family = "IosevkaTermSlab Nerd Font Mono"
+family = "FantasqueSansM Nerd Font Mono"
 
 [cursor]
 style = { shape = "Underline", blinking = "On" }

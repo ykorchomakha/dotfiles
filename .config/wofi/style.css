@@ -10,7 +10,7 @@
 window {
   margin: 2px;
   background-color: @bg0_color;
-  border-radius: 10;
+  border-radius: 0;
   background-color: @bg0_color;
 }
 
@@ -29,7 +29,7 @@ window {
 #outer-box {
   margin: 2px;
   border: 2px solid @bg0_h_color;
-  border-radius: 10;
+  border-radius: 0;
   background-color: @bg0_color;
 }
 

@@ -13,10 +13,10 @@
     ],
 
     "modules-center": [
-        "clock"
     ],
 
     "modules-right": [
+        "clock",
         "hyprland/language",
         "tray",
         "cpu_text",
