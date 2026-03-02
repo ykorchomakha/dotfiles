@@ -78,6 +78,19 @@ require('lazy').setup({
     { 'leoluz/nvim-dap-go' },
     { 'tpope/vim-vinegar' },
 
+    -- File tree
+    {
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            require("nvim-tree").setup {}
+        end,
+    },
+
     -- Tests
     {
         'nvim-neotest/neotest',
