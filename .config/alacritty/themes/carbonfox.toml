@@ -1,7 +1,3 @@
-# Nightfox Alacritty Colors
-## name: carbonfox
-## upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/carbonfox/alacritty.toml
-
 [colors.primary]
 background = "#161616"
 foreground = "#f2f4f8"
