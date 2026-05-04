@@ -1,11 +1,8 @@
-@define-color bg0_color #282828;
-@define-color bg1_color #3c3836;
-@define-color bg2_color #504945;
-@define-color bg3_color #665c54;
-@define-color bg4_color #7c6f64;
+@define-color bg0_color #161616;
+@define-color bg1_color #78a9ff;
 @define-color bg0_h_color #1d2021;
 
-@define-color fg_color #ebdbb2;
+@define-color fg_color #f2f4f8;
 
 window {
   margin: 2px;
@@ -16,7 +13,7 @@ window {
 
 #input {
   margin: 2px;
-  border: 2px solid @bg4_color;
+  border: 2px solid @bg1_color;
   border-radius: 5;
   background-color: @bg0_color;
 }
