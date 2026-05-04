@@ -1,15 +1,14 @@
 [font]
-size = 13.0
+size = 12.0
 
 [font.normal]
-# family = "IosevkaTermSlab Nerd Font Mono"
-family = "FantasqueSansM Nerd Font Mono"
+family = "Iosevka Nerd Font Mono"
 
 [cursor]
 style = { shape = "Underline", blinking = "On" }
 
 [general]
 import = [
-    "~/.config/alacritty/themes/gruvbox_dark.toml"
+    "~/.config/alacritty/themes/carbonfox.toml"
 ]
 
